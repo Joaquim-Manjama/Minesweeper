@@ -1,0 +1,53 @@
+Minesweeper is a classic logic-based puzzle game where the player uncovers a grid while avoiding hidden mines. Here’s a breakdown of the game mechanics and how it works:
+
+### **1. Grid Setup**
+- **Grid Sizes:** Common grids are small (8x8), medium (16x16), or large (16x30). Custom sizes can be allowed.
+- **Mines:** Mines are randomly placed on the grid, and the number depends on the difficulty level:
+  - Easy: ~10% of the grid contains mines.
+  - Medium: ~15-20%.
+  - Hard: ~25-30%.
+- **Empty Spaces:** The rest of the grid contains "safe" squares.
+
+### **2. Objective**
+- Uncover all squares without mines.
+- Mark all mines with flags.
+
+### **3. Core Mechanics**
+- **Uncovering Squares:** Clicking (or interacting) with a square can:
+  - Reveal a number (indicating the number of adjacent mines).
+  - Uncover an empty area (if no adjacent mines exist).
+  - Trigger a mine (game over).
+- **Flagging:** Right-click or equivalent action to mark suspected mine locations with flags.
+- **Win Condition:** All non-mine squares are revealed, and all mines are flagged.
+
+### **4. Adjacent Squares**
+- Each square can have up to 8 adjacent squares (diagonal, vertical, and horizontal).
+- Numbers on revealed squares indicate the total mines among these adjacent squares.
+
+### **5. Special Features**
+- **Chain Reaction:** Uncovering a square with no adjacent mines automatically reveals surrounding squares until numbers or grid edges are reached.
+- **First Click Guarantee:** The first click is always safe and does not uncover a mine.
+- **Timer:** Tracks how long the player takes to solve the grid.
+- **Flag Count:** Displays the number of flags placed versus total mines.
+
+### **6. User Interface**
+- **Grid:** Displays squares that can be clicked.
+- **Indicators:** Timer, mine counter, restart button.
+- **Visual Feedback:** Different states for flagged, revealed, and unrevealed squares.
+
+### **7. Input/Interaction**
+- **Mouse/Keyboard/Touch Controls:** Adaptable for various platforms.
+- **Restart Game:** Reset the grid while keeping track of high scores if applicable.
+
+### **8. Game States**
+- **Active:** Ongoing game.
+- **Win:** All safe squares uncovered and all mines flagged.
+- **Loss:** Mine triggered.
+
+### **9. Optional Enhancements**
+- **Custom Difficulty:** Allow users to choose grid size and mine density.
+- **High Scores:** Track fastest times.
+- **Hints:** Limited hints to reveal if a square is safe or not.
+- **Themes:** Customizable grid and mine designs.
+
+Would you like help implementing this step by step?
